@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^bipautoparts\.com\.au$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bipautoparts\.com\.au$
+RewriteRule ^/?$ "http\:\/\/www\.bipautospares\.com\.au" [R=301,L]
+
