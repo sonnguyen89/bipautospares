@@ -72,7 +72,7 @@ function wp_initial_constants() {
 	// Add define('WP_DEBUG_DISPLAY', null); to wp-config.php use the globally configured setting for
 	// display_errors and not force errors to be displayed. Use false to force display_errors off.
 	if ( !defined('WP_DEBUG_DISPLAY') )
-		define( 'WP_DEBUG_DISPLAY', false );
+		define( 'WP_DEBUG_DISPLAY', true );
 
 	// Add define('WP_DEBUG_LOG', true); to enable error logging to wp-content/debug.log.
 	if ( !defined('WP_DEBUG_LOG') )
