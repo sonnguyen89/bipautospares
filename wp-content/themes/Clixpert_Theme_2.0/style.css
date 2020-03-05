@@ -567,7 +567,7 @@ footer a:hover { }
 
 .imagelightbox-loading div { width: 1.3em; height: 1.3em; background-color: #fff; animation: imagelightbox-loading .5s ease infinite; }
 
-.staticbanner { background:url(images/banner01.jpg) no-repeat center top; height: 420px; margin: 84px auto 0; position: relative;background-size: 1416px auto;max-width: 1200px;  }
+.staticbanner { background:url(images/banner01.jpg) no-repeat center top; height: 420px; margin: 180px auto 0; position: relative;max-width: 100%;  }
 
 /*.bancption li:first-child {
 
@@ -730,9 +730,9 @@ section.innersection { padding: 60px 0; }
 
 .menuPhone ul { text-align: center; }
 
-.current_page_item a, .current-menu-item a { color: #0302fe !important; }
+.current_page_item a, .current-menu-item a { color: #000 !important; }
 
-.current_page_item a:hover, .current_page_item li a:hover, .current-menu-item a:hover { color: #0302fe !important; }
+.current_page_item a:hover, .current_page_item li a:hover, .current-menu-item a:hover { color: #000 !important; }
 
 footer .current_page_item a, footer .current-menu-item a { background: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; color: #656464 !important; }
 
@@ -742,7 +742,7 @@ footer .current_page_item a:hover, footer .current-menu-item a:hover { backgroun
 
 .current_page_item li a { color: #ffffff !important; background: none; }
 
-.menuD { margin-top: 15px;}
+.menuD { margin-top: 0;}
 
 a.menu-link { color: #000; display: block; text-decoration: none; height: 22px; width: 35px; }
 
@@ -764,8 +764,12 @@ nav li { display: inline-block; margin: 0; position: relative; padding: 14px 9px
 
 }
 
-.menu li a { color: #717171; display: inline-block; font-size: 10px; line-height: 30px; padding: 0; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
-
+.menu li a { color: #000000; display: inline-block; font-size: 14px; font-weight: bold ;line-height: 30px; padding: 0; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+ @media screen and (max-width: 1024px) {
+     .menu li a {
+         font-size: 13px;
+     }
+ }
 span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px; position: absolute; padding: 0 0.5em; cursor: pointer; right: 7px; top: 5px; ; width: 30px; height: 30px; background: url(images/dpDownArrow.png) no-repeat center center; }
 
 /*===============  Navigation Toggle  ===================*/
@@ -774,11 +778,18 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; height: 5px; width: 35px; position: absolute; display: block; content: ''; }
 
-#nav-toggle span { background: #673c40; }
+#nav-toggle span { background: #000; }
 
-#nav-toggle span:before { background: #54675f; }
+#nav-toggle span:before { background: #000; }
 
-#nav-toggle span:after { background: #54675f; }
+#nav-toggle span:after { background: #000; }
+
+@media only screen and (max-width: 767px) {
+
+  #nav-toggle span { background: #fff; }
+ #nav-toggle span:before { background: #fff; }
+ #nav-toggle span:after { background: #fff; }
+}
 
 #nav-toggle span::before { top: 8px; }
 
@@ -807,19 +818,18 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
 .logo span { font-size: 14px; font-weight: bold; color: #0302fe; }
 
 .logo {
-
-  float: left;
-
-  margin-right: 16px;
-
-  margin-top: 30px;
-
+    float: left;
+    margin-right: 16px;
+    margin-top: 38px;
+    margin-bottom: 10px;
 }
 
 .menuPhone {
-
-  float: left;
-
+    float: left;
+    width: 100%;
+    height: 70px;
+    padding: 8px 0;
+    margin: 8px 0;
 }
 
 .level-01 {
@@ -1672,9 +1682,14 @@ div.wpcf7-validation-errors, .wpcf7-mail-sent-ok, div.wpcf7-spam-blocked { displ
 
 .bkmrkbtn a { background: url(images/star.png) no-repeat 0 0; }
 
-header { left: 0; position: absolute; top: 0; width: 100%; background-color: #fff; }
+header { left: 0; position: absolute; top: 0; width: 100%; background-color: #000; color:#fff; }
+header .wid,header .wid.wid-menu { width: 100%; margin: 0 auto; padding:0 60px; }
 
-header a { text-decoration: none !important; }
+ @media only screen and (max-width: 767px) {
+     header .wid.wid-menu { height:0 }
+ }
+
+ header a { text-decoration: none !important; }
 
 .testimonial .slideCvr { position: relative; }
 
@@ -1714,16 +1729,16 @@ footer a:hover { color: #0302fe !important; }
 
 .brands .lSAction { display: none !important; }
 
-.aniPos { position: fixed; z-index: 999999; background: #fff; padding-bottom: 10px; border-bottom: 2px solid #999; }
+.aniPos { position: fixed;
+    z-index: 999999;
+    padding-bottom: 0;
+    border-bottom: 2px solid #000; }
 
 .aniPos .logo { }
 
 .aniPos .menuD {
-
   margin-bottom: 0;
-
-  margin-top: 29px;
-
+  margin-top: 14px;
 }
 
 .aniPos .phoneHed { margin-top: 27px; }
@@ -1897,13 +1912,13 @@ nav > ul > li:last-child { padding-right: 0; }
 
 .menu > ul > li > a { position: relative }
 
-.menu > ul > li > a:after, .menu ul > li > a:before { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgba(227, 183, 44, 0) }
+.menu > ul > li > a:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgba(227, 183, 44, 0) }
 
-.menu > ul > li > a:hover:after, .menu > ul > li > a:hover:before { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgb(49, 49, 254); }
+.menu > ul > li > a:hover:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: #000; }
 
-.current_page_item a:after, .current_page_item a:before, .current-menu-item a:before, .current-menu-item a:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgb(3, 2, 254) !important; }
+.current_page_item a:after, .current-menu-item a:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: #000 !important; }
 
-.current_page_item a:hover:after, .current_page_item a:hover:before, .current-menu-item a:hover:before, .current-menu-item a:hover:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgb(3, 2, 254) !important; }
+.current_page_item a:hover:after, .current-menu-item a:hover:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: #000 !important; }
 
 .current_page_item li a:after, .current_page_item li a:before, .current-menu-item li a:before, .current-menu-item li a:after { position: absolute; content: ""; height: 2px; width: 100%; left: 0; background-color: rgba(227, 183, 44, 0) !important; }
 
@@ -1921,7 +1936,7 @@ footer .current_page_item a:after, footer .current_page_item a:before, footer .c
 
 .menu span.has-subnav { display: none; }
 
-.menu li a:hover { color: #1200ff; }
+.menu li a:hover { color: #000; }
 
 /*.menu li li a:hover { color: #F9F04B; }*/
 
@@ -2014,7 +2029,7 @@ ul.sub-menu a { font-size: 12px !important; }
 
 .aniPos ul.sub-menu a { font-size: 11px !important; }
 
-.menu li a { font-size: 13px; }
+.menu li a { font-size: 12px; }
 
 }
 
@@ -2072,12 +2087,6 @@ ul.sub-menu a { font-size: 12px !important; }
 
 }
 
-.menuD {
-
-  margin-top: 15px;
-
-}
-
 .aniPos {
 
   padding-bottom: 0;
@@ -2104,8 +2113,8 @@ nav li {
 
 }
 
- @media screen and (max-width:1023px) {
-
+ @media screen and (max-width:874px) {
+     .menuD { margin-top:15px;  }
 }
 
  @media screen and (max-width:995px) {
@@ -2128,12 +2137,6 @@ nav li {
 .menu li a {
 
   font-size: 11px;
-
-}
-
-.menuD {
-
-  margin-top: 29px;
 
 }
 
@@ -2316,7 +2319,7 @@ header .current-menu-item a {
 
 .brnDS .wid { width: 100%; }
 
-.staticbanner { background: #c3c3c3 url(images/banner01.png) no-repeat center center; height: 312px; margin-top: 100px; position: relative; background-size:1058px; }
+.staticbanner { background: #c3c3c3 url(images/banner01.png) no-repeat center center; height: 312px; margin-top: 170px; position: relative; background-size:1058px; }
 
 .banhed {font-size: 48px;}
 
@@ -2342,7 +2345,7 @@ header .current-menu-item a {
 
 .aniPos .menu { top: 101px; }
 
-.menu { z-index: 999999 !important; right: -100%; margin: 0 0 0 !important; position: absolute; top: 83px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; width: 0; }
+.menu { z-index: 999999 !important; right: -100%; margin: 0 0 0 !important; position: absolute; top: 170px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; width: 0; }
 
 a.menu-link { float: right; position: absolute; right: 17px; margin-top: 3px; }
 
@@ -2834,29 +2837,32 @@ h2, h2, h3, h4, h5, h6 { font-size: 21px; line-height: 34px; }
 
 }
  @media only screen and (max-width:360px) {
-.innerbanner h1 {
-    padding: 44px 0 !important;
-        font-size: 26px;
-    margin: 0 0;
-}
-.innerbanner h1.contctCls {
-  padding: 67px 0 !important;
-    margin: 0 0;
-}
-.innerbanner h1.threeLine {
-    padding: 21px 0 !important;
-        font-size: 26px;
-    margin: 0 0;
-}
+        .innerbanner h1 {
+            padding: 44px 0 !important;
+                font-size: 26px;
+            margin: 0 0;
+        }
+        .innerbanner h1.contctCls {
+          padding: 67px 0 !important;
+            margin: 0 0;
+        }
+        .innerbanner h1.threeLine {
+            padding: 21px 0 !important;
+                font-size: 26px;
+            margin: 0 0;
+        }
 
-.aniPos .phoneHed a {
-  background-position: 11px 9px;
-  background-size: 12px auto;
-  font-size: 16px;
-}}
+        .aniPos .phoneHed a {
+          background-position: 11px 9px;
+          background-size: 12px auto;
+          font-size: 16px;
+        }
+ }
 
- @media only screen and (max-width:320px) {.phoneHed a {
-  font-size: 12px;
+ @media only screen and (max-width:320px) {
+     .phoneHed a {
+
+     }
 }
 .aniPos .phoneHed a {
   font-size: 12px;
