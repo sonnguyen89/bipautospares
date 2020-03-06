@@ -460,8 +460,13 @@ ul.sub-menu a { font-size: 14px !important; }
 .prlx { background:url(images/ftrbanr.jpg) no-repeat center; height: 520px; text-align: center; background-size:cover; }
 
 .phoneHed { float: right; margin-top: 27px; padding-left:0px; }
+ @media screen and (max-width: 875px) {
+     .phoneHed {
+         display:none;
+     }
+ }
 
-.phoneHed a { background: url(images/phone.png) no-repeat 0 4px; padding-left: 28px; font-size: 23px; font-weight: bold; color: #0102fa; }
+.phoneHed a { background: url(images/phone.png) no-repeat 0 2px; padding-left: 28px; font-size: 18px; font-weight: bold; color: #fff; background-size: 16px; }
 
 .phoneHed a:hover { color: #3b3c40; }
 
@@ -1899,14 +1904,6 @@ footer a:hover { color: #0302fe !important; }
 
 /*Menu*/
 
-
-
-
-
-
-
-a.menu-link { display: none; }
-
 .js .menu, .js .menu > ul ul { max-height: none; overflow: visible; }
 
 .js .menu > ul li:hover > ul { display: flex; }
@@ -2103,7 +2100,7 @@ ul.sub-menu a { font-size: 12px !important; }
 
 .phoneHed {
 
-  margin-top: 27px;
+  margin-top:50px;
 
 }
 
@@ -2181,7 +2178,7 @@ font-size: 33px;
      }
  }
 
- @media screen and (max-width:874px) {
+ @media screen and (max-width:875px) {
 	 .socilmedia ul {
   float: none;
   text-align: center;
@@ -2357,12 +2354,6 @@ header .current-menu-item a {
 .menu.active { right: 0; }
 
 .aniPos .menu { top: 101px; }
-
-.menu { z-index: 999999 !important; right: -100%; margin: 0 0 0 !important; position: absolute; top: 76px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; width: 0; }
-
-a.menu-link { float: right; position: absolute; right: 17px; margin-top: 3px; }
-
-.menu, .menu > ul ul { margin: 0; max-height: 0; overflow: hidden; }
 
 .menu li a { border-bottom: 1px solid #000000; display: block; padding: 5px 35px; color: #fff; }
 
@@ -2615,11 +2606,15 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 }
 
  .logo.logo-mobile { display:none; }
-
+ a.menu-link {   display: none; }
+ .js .menu, .js .menu > ul ul {
+     max-height: none;
+     overflow: visible;
+ }
  @media only screen and (max-width: 875px) {
      .logo { float: left; margin-top: 13px; text-align: center; }
 
-     a.menu-link { top: 46px; margin-top: 0; }
+     a.menu-link { top: 46px; margin-top: 0; float: right; position: absolute; right: 17px; display:block }
      #nav-toggle span {
          background: #fff;
      }
@@ -2627,6 +2622,25 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          background: #fff;
      }
      .menuPhone { float: left; }
+
+     .menu, .menu > ul ul {
+         margin: 0;
+         max-height: 0;
+         overflow: hidden;
+     }
+     .menu {
+         z-index: 999999 !important;
+         right: -100%;
+         margin: 0 0 0 !important;
+         position: absolute;
+         top: 76px;
+         -webkit-transition: all 0.4s;
+         -moz-transition: all 0.4s;
+         -ms-transition: all 0.4s;
+         -o-transition: all 0.4s;
+         transition: all 0.4s;
+         width: 0;
+     }
  }
  @media only screen and (max-width:479px) {
      .logo.logo-mobile { display:block; }
