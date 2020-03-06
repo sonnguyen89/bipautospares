@@ -50,17 +50,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header>
-    <div class="wid" style="width: 100%;">
-        <div class="logo">
+    <div class="wid wid-top" style="width: 100%;">
+        <div class="logo logo-desktop">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo(); ?>">
                 <img src="<?php bloginfo('template_directory')?>/images/bipautospares.jpg" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
             </a>
         </div>
-        <div class="phoneHed">
-            <a href="tel:<?php echo str_replace(array(" ","(",")"),"",get_option('phone')); ?>" title="<?php echo get_option('phone'); ?>"><?php echo get_option('phone'); ?></a>
-        </div>
+  <!--      <div class="phoneHed">
+            <a href="tel:<?php /*echo str_replace(array(" ","(",")"),"",get_option('phone')); */?>" title="<?php /*echo get_option('phone'); */?>"><?php /*echo get_option('phone'); */?></a>
+        </div>-->
     </div>
     <div class="wid wid-menu" style="background-color: #ffe000;">
+        <div class="logo logo-mobile">
+            <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo(); ?>">
+                <img src="<?php bloginfo('template_directory')?>/images/bipautospares.jpg" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
+            </a>
+        </div>
         <div class="menuPhone">
             <div class="menuD">
                 <a href="#menu" id="nav-toggle" class="menu-link">

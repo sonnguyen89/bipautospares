@@ -840,7 +840,10 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
 
 .logotxt { clear: both; display: inline-block; margin-top: 0; margin-left: 5px; font-size: 14px; color: #3b3c40; font-weight: bold; }
 
-.logo img { float: left; margin-top: -17px; }
+
+ @media only screen and (max-width: 867px) {
+     .logo img { float: left; margin-top: 0; }
+ }
 
 .logoRgt { float: right; margin-top: 0px; width: 722px; }
 
@@ -1685,7 +1688,7 @@ div.wpcf7-validation-errors, .wpcf7-mail-sent-ok, div.wpcf7-spam-blocked { displ
 header { left: 0; position: absolute; top: 0; width: 100%; background-color: #000; color:#fff; }
 header .wid,header .wid.wid-menu { width: 100%; margin: 0 auto; padding:0 60px; }
 
- @media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 875px) {
      header .wid.wid-menu { height:0 }
  }
 
@@ -2004,6 +2007,9 @@ header { position: inherit !important; padding-bottom: 10px !important; border-b
 .staticbanner { margin-top: 0px !important; }
 
 }
+ @media only screen and (min-width : 480px) and (max-width : 875px) {
+   header { position: inherit !important; padding-bottom: 10px !important; border-bottom: 2px solid #999; }
+ }
 
  @media only screen and (max-width:1260px) {
 
@@ -2150,7 +2156,7 @@ nav li {
 
 }
 
-nav li { padding: 0 7px; }
+
 
 .cont_Lft { width: 56%; }
 
@@ -2167,6 +2173,11 @@ font-size: 33px;
 }
 
 }
+ @media screen and (max-width:934px) {
+     nav li {
+         padding: 0 7px;
+     }
+ }
 
  @media screen and (max-width:874px) {
 	 .socilmedia ul {
@@ -2257,7 +2268,7 @@ font-size: 33px;
 
 }
 
-	 .current_page_item a, .current-menu-item a { background-color: #0302fe !important; color:#fff !important; }
+	 .current_page_item a, .current-menu-item a { background-color: #e7d430 !important; color:#fff !important; }
 
 .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item.page-item-5.current_page_item.menu-item-30 a {
 
@@ -2274,7 +2285,7 @@ footer .current_page_item a {
 }
 header .current-menu-item a {
 
- background-color: #0302fe !important;
+ background-color: #e7d430 !important;
     color: #fff !important;
 
 }
@@ -2319,7 +2330,7 @@ header .current-menu-item a {
 
 .brnDS .wid { width: 100%; }
 
-.staticbanner { background: #c3c3c3 url(images/banner01.png) no-repeat center center; height: 312px; margin-top: 170px; position: relative; background-size:1058px; }
+.staticbanner { background: #c3c3c3 url(images/banner01.png) no-repeat center center; height: 312px; margin-top: 0px; position: relative; background-size:1058px; }
 
 .banhed {font-size: 48px;}
 
@@ -2345,13 +2356,13 @@ header .current-menu-item a {
 
 .aniPos .menu { top: 101px; }
 
-.menu { z-index: 999999 !important; right: -100%; margin: 0 0 0 !important; position: absolute; top: 170px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; width: 0; }
+.menu { z-index: 999999 !important; right: -100%; margin: 0 0 0 !important; position: absolute; top: 76px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; width: 0; }
 
 a.menu-link { float: right; position: absolute; right: 17px; margin-top: 3px; }
 
 .menu, .menu > ul ul { margin: 0; max-height: 0; overflow: hidden; }
 
-.menu li a { border-bottom: 1px solid #0302fe; display: block; padding: 5px 35px; color: #fff; }
+.menu li a { border-bottom: 1px solid #000000; display: block; padding: 5px 35px; color: #fff; }
 
 .menu li li a { padding-left: 50px; }
 
@@ -2359,8 +2370,8 @@ a.menu-link { float: right; position: absolute; right: 17px; margin-top: 3px; }
 
 .menu li li:last-child a { border-bottom: 1px solid #d8d8d8; }
 
-.menu li:hover { background: #0605dc; }
-
+.menu li:hover { background: #ffe000; }
+.menu li a:hover{ color:#000; }
 /*Menu Ends*/
 
 
@@ -2567,15 +2578,9 @@ a.menu-link { float: right; position: absolute; right: 17px; margin-top: 3px; }
 
 .prdtlsit li { width: 75%; }
 
-.logo img { float: none; }
+.logo img { float: none;    margin-top: 0;  }
 
-.menu { top: 100px; }
-
-.menuPhone { float: left; }
-
-a.menu-link { top: 68px; margin-top: 0px; }
-
-.logo { float: none; margin-top: 13px; text-align: center; }
+.logo { float: left; margin-top: 13px; text-align: center; }
 
 .slideCvr { padding: 41px 0 0; }
 
@@ -2606,6 +2611,35 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 .bkmrk { display: none !important; }
 
 }
+
+ .logo.logo-mobile { display:none; }
+
+ @media only screen and (max-width: 875px) {
+     .logo { float: left; margin-top: 13px; text-align: center; }
+
+     a.menu-link { top: 36px; margin-top: 0px; }
+     #nav-toggle span {
+         background: #fff;
+     }
+     #nav-toggle span:after, #nav-toggle span:before  {
+         background: #fff;
+     }
+     .menuPhone { float: left; }
+ }
+ @media only screen and (max-width:479px) {
+     .logo.logo-mobile { display:block; }
+     .logo.logo-mobile img {
+         float: left;
+         width: 141px;
+         margin-top: 3px;
+     }
+     .wid.wid-top {
+         display: none;
+     }
+     a.menu-link {
+         top: 31px;
+     }
+ }
 
  @media only screen and (max-width:479px) {
 	 .innerbanner h1.threeLine {
@@ -2653,10 +2687,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 	 .aniPos .logotxt {
   display: inline;
 }
-a.menu-link {
-  top: 54px;
-}
-
 .logo img {
   float: left;
   width: 60px;
