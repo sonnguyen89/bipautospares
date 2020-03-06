@@ -820,10 +820,12 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
 .logo {
     float: left;
     margin-right: 16px;
-    margin-top: 38px;
+    margin-top: 0;
     margin-bottom: 10px;
 }
-
+ .logo img {
+     width: 173px;
+ }
 .menuPhone {
     float: left;
     width: 100%;
@@ -2617,7 +2619,7 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
  @media only screen and (max-width: 875px) {
      .logo { float: left; margin-top: 13px; text-align: center; }
 
-     a.menu-link { top: 36px; margin-top: 0px; }
+     a.menu-link { top: 46px; margin-top: 0; }
      #nav-toggle span {
          background: #fff;
      }
@@ -2629,9 +2631,10 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
  @media only screen and (max-width:479px) {
      .logo.logo-mobile { display:block; }
      .logo.logo-mobile img {
-         float: left;
          width: 141px;
-         margin-top: 3px;
+         margin-top: 0;
+         position: absolute;
+         left: 0;
      }
      .wid.wid-top {
          display: none;

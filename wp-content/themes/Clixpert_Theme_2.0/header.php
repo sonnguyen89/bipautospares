@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wid wid-top" style="width: 100%;">
         <div class="logo logo-desktop">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo(); ?>">
-                <img src="<?php bloginfo('template_directory')?>/images/bipautospares.jpg" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
+                <img src="<?php bloginfo('template_directory')?>/images/BIP_auto_parts_and_repairs_logo-01.png" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
             </a>
         </div>
   <!--      <div class="phoneHed">
@@ -63,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wid wid-menu" style="background-color: #ffe000;">
         <div class="logo logo-mobile">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo(); ?>">
-                <img src="<?php bloginfo('template_directory')?>/images/bipautospares.jpg" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
+                <img src="<?php bloginfo('template_directory')?>/images/BIP_auto_parts_and_repairs_logo-01.png" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
             </a>
         </div>
         <div class="menuPhone">
