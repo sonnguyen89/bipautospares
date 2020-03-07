@@ -56,6 +56,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="<?php bloginfo('template_directory')?>/images/BIP_auto_parts_and_repairs_logo-01.png" alt="<?php bloginfo(); ?>" title="<?php bloginfo(); ?>">
             </a>
         </div>
+        <div class="locationHed">
+            <a href="https://www.google.com/maps/place/61+Westwood+Dr,+Ravenhall+VIC+3023/@-37.763792,144.7502243,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad68acdf930613f:0x98c6b6c92f9ca72e!8m2!3d-37.763792!4d144.752413"
+               title="<?php  echo get_option('phone'); ?>"><?php echo "61 Westwood Drive (Ravenhall) Deer Park VIC 3023"; ?></a>
+        </div>
         <div class="phoneHed">
             <a href="tel:<?php echo str_replace(array(" ","(",")"),"",get_option('phone')); ?>" title="<?php  echo get_option('phone'); ?>"><?php echo get_option('phone'); ?></a>
         </div>

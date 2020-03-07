@@ -459,16 +459,27 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .prlx { background:url(images/ftrbanr.jpg) no-repeat center; height: 520px; text-align: center; background-size:cover; }
 
-.phoneHed { float: right; margin-top: 27px; padding-left:0px; }
+.phoneHed { float: right; margin-top: 40px; padding-left:0; }
  @media screen and (max-width: 875px) {
      .phoneHed {
          display:none;
      }
  }
+ .locationHed {
+     position: absolute;
+     left: 33%;
+     margin-top: 40px;
+     padding-left: 0;
+ }
+ .locationHed a { background: url(images/location-icons-01.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
+ @media screen and (max-width: 875px) {
+     .locationHed {
+         display:none
+     }
+ }
+.phoneHed a { background: url(images/phone-icons-02.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
 
-.phoneHed a { background: url(images/phone.png) no-repeat 0 2px; padding-left: 28px; font-size: 18px; font-weight: bold; color: #fff; background-size: 16px; }
-
-.phoneHed a:hover { color: #3b3c40; }
+.phoneHed a:hover { color: #fff; }
 
 .feATURE { padding: 30px 0; }
 
@@ -2048,19 +2059,12 @@ ul.sub-menu a { font-size: 12px !important; }
 
  @media screen and (max-width:1024px) {
 
-.phoneHed a { background-position: 0 0; font-size: 17px; padding-bottom: 10px; }
 
 .logotxt { font-size: 12px; }
 
 .logo span { font-size: 12px; }
 
 .infoBX { display: none !important }
-
-.phoneHed {
-
-  margin-top: 0;
-
-}
 
 .logo {
 
@@ -2095,12 +2099,6 @@ ul.sub-menu a { font-size: 12px !important; }
 .aniPos {
 
   padding-bottom: 0;
-
-}
-
-.phoneHed {
-
-  margin-top:50px;
 
 }
 
@@ -2250,6 +2248,8 @@ font-size: 33px;
 }
 
 .phoneHed {
+
+  display: none;
 
   float: left;
 
