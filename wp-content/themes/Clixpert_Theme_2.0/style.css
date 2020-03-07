@@ -341,18 +341,18 @@ ul.sub-menu a { font-size: 14px !important; }
 .innerbanner h1 { text-align: center; padding: 113px 0 0; color: #0302fe; }
 
 .innerbanner {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 275px;
-  margin-top: 88px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    margin-top: 180px;
 }
 
 .innersection a { color: #0102fa; font-size: 20px; }
 
 .innersection a:hover { color: #3b3c40; }
 
-.footHed a { font-size: 24px; color: #000; font-family: 'Montserrat', sans-serif; }
+.footHed a { font-size: 24px; color: #fff; font-family: 'Montserrat', sans-serif; font-weight: bold; }
 
 .socilmedia { margin-top: 30px; }
 
@@ -378,7 +378,7 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .bannerSlider li { position: relative; }
 
-.banhed { font-size: 52px; font-weight: bold; color: #0102fa;text-shadow: 2px 3px 1px rgba(66, 64, 64, 0.5);margin-bottom: 0; }
+.banhed { font-size: 52px; font-weight: bold; color: #6d6e71;margin-bottom: 0; }
 
 .bancptionul { }
 
@@ -421,9 +421,9 @@ ul.sub-menu a { font-size: 14px !important; }
 
 }
 
-.prlx a { background: #0809ea url(images/right-chevron.png) no-repeat 94% -7px; text-align: center; text-decoration: none; color: #fff; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
+.prlx a { background: #ffe000 url(images/right-chevron.png) no-repeat 94% -7px; text-align: center; text-decoration: none; color: #000; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
 
-.prlx a:hover { background-color: #188c14; color: #fff; background-position: 94% -7px; }
+.prlx a:hover {  background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94% -7px; color: #fff; }
 
 .reviewsCls .lSAction > a, .brNds .lSAction > a { background: url(images/arros.png); opacity: 1; width: 15px; }
 
@@ -529,9 +529,13 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .foot { display: inline-block; width: 24%; }
 
-footer { padding: 50px 0; background: #f2f2f2; }
+footer { padding: 50px 0; background: #6d6e71; }
 
-.footHed { font-size: 24px; margin-bottom: 17px; text-transform: uppercase; }
+.footHed {    font-size: 24px;
+    margin-bottom: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
 
 footer ul { }
 
@@ -553,11 +557,11 @@ footer li { }
 
 .socilmedia li:last-child a { background: url(images/socialmedia.png) no-repeat -168px 0; padding: 25px 35px; }
 
-footer p { font-size: 16px; color: #999; margin-bottom: 0px; }
+footer p { font-size: 16px; color: #fff; margin-bottom: 0px; }
 
-footer span { font-family: 'Open Sans', sans-serif; color: #999 }
+footer span { font-family: 'Open Sans', sans-serif; color: #fff }
 
-footer a { font-family: 'Open Sans', sans-serif; text-decoration: none; font-size: 16px; color: #656464; font-weight: 400; }
+footer a { font-family: 'Open Sans', sans-serif; text-decoration: none; font-size: 16px; color: #fff; font-weight: 400; }
 
 .foot:nth-child(3) p { color: #000; font-weight: 600; }
 
@@ -750,7 +754,7 @@ section.innersection { padding: 60px 0; }
 
 .current_page_item a:hover, .current_page_item li a:hover, .current-menu-item a:hover { color: #000 !important; }
 
-footer .current_page_item a, footer .current-menu-item a { background: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; color: #656464 !important; }
+footer .current_page_item a, footer .current-menu-item a { background: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; color: #fff !important; }
 
 .sitmpee .current_page_item a { color: inherit !important }
 
@@ -1742,7 +1746,7 @@ header .wid,header .wid.wid-menu { width: 100%; margin: 0 auto; padding:0 60px; 
 
 .ftrCopy { padding: 17px 0; background-color: #fff; }
 
-footer a:hover { color: #0302fe !important; }
+footer a:hover { color: #ffe000  !important; }
 
 .innerpage { margin-top: 135px; padding-top: 20px; min-height: 450px; padding-bottom: 40px; }
 
@@ -1766,7 +1770,7 @@ footer a:hover { color: #0302fe !important; }
 
 .aniPos .logoRgt { margin-top: 17px; }
 
-.aniPos .menu li a { font-size: 12px; }
+.aniPos .menu li a { font-size: 14px; }
 
 .blgcont > img { float: left; margin-right: 20px; }
 
@@ -1837,7 +1841,7 @@ footer a:hover { color: #0302fe !important; }
   background-position: 94% -7px;
 }
 .reqQt.innpgQt  a {
-  background: #0809ea url("images/right-chevron.png") no-repeat scroll 94% -7px;
+  background: #ffe000 url("images/right-chevron.png") no-repeat scroll 94% -7px;
   border-radius: 0;
   color: #fff;
   font-size: 14px;
@@ -1847,9 +1851,9 @@ footer a:hover { color: #0302fe !important; }
   text-transform: uppercase;
 }
 .reqQt.homQt  a {
-  background: #0809ea url("images/right-chevron.png") no-repeat scroll 94% -7px;
+  background: #ffe000 url("images/right-chevron.png") no-repeat scroll 94% -7px;
   border-radius: 0;
-  color: #fff;
+  color: #000;
   font-size: 14px;
   padding: 11px 36px 11px 16px;
   text-align: center;
@@ -1857,8 +1861,8 @@ footer a:hover { color: #0302fe !important; }
   text-transform: uppercase;
 }
 .reqQt.homQt a:hover {
-  background-position: 94% -7px;
-  background-color: #188c14; color: #fff;
+    color: #fff;
+    background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94% -7px;
 }
 .reqQt.homQt {
   bottom: 25px;
@@ -2201,7 +2205,7 @@ font-size: 33px;
 
 	 .innerbanner {
 
-  margin-top: 83px;
+  margin-top: 0px;
 
 }
 
