@@ -357,7 +357,7 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .aniPos ul.sub-menu a { font-size: 12px !important; }
 
-.innerbanner h1 { text-align: center; padding: 113px 0 0; color: #0302fe; }
+.innerbanner h1 { text-align: center; padding: 113px 0 0; color: #000; }
 
 .innerbanner {
     background-position: center center;
