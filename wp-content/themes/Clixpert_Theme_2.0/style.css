@@ -74,9 +74,28 @@ a, input[type="submit"], input[type="button"], button, label[for] { cursor: poin
 
 input[type="submit"], input[type="button"], button { -webkit-appearance: none; }
 
-input[type="submit"], input[type="button"], button { background: #0809ea url(images/right-chevron.png) no-repeat 94% -7px; border: none; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; text-align: center; margin-top: 20px; text-decoration: none; color: #fff; border: 1px solid#0302fe; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
+input[type="submit"], input[type="button"], button {
+    background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+    background-size: 16px;
+    border: none; -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    text-align: center;
+    margin-top: 20px; text-decoration: none; color: #000;
+    font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0; text-transform: uppercase; }
 
-input[type="submit"]:hover, input[type="button"]:hover, button:hover { background-color: #188c14; color: #fff; border-color: #188c14; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; background-position: 94% -7px; }
+input[type="submit"]:hover, input[type="button"]:hover, button:hover {
+    background: #000 url(images/right-chevron-white.png) no-repeat 94%;
+    background-size: 16px;
+    color: #fff;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
 
 /*---Misc. Element Styling---*/
 
@@ -421,9 +440,9 @@ ul.sub-menu a { font-size: 14px !important; }
 
 }
 
-.prlx a { background: #ffe000 url(images/right-chevron.png) no-repeat 94% -7px; text-align: center; text-decoration: none; color: #000; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
+.prlx a { background: #ffe000 url(images/right-chevron.png) no-repeat 94%; background-size: 16px; text-align: center; text-decoration: none; color: #000; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
 
-.prlx a:hover {  background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94% -7px; color: #fff; }
+.prlx a:hover {  background:  #000000 url("images/right-chevron-white.png") no-repeat  94%; background-size: 16px; color: #fff; }
 
 .reviewsCls .lSAction > a, .brNds .lSAction > a { background: url(images/arros.png); opacity: 1; width: 15px; }
 
@@ -1837,13 +1856,15 @@ footer a:hover { color: #ffe000  !important; }
   text-align: center;
 }
 .reqQt.innpgQt a:hover {
-  background-color: #188c14; color: #fff;
-  background-position: 94% -7px;
+  color: #fff;
+  background: #000 url(images/right-chevron-white.png) no-repeat 94%;
+  background-size: 16px;
 }
 .reqQt.innpgQt  a {
-  background: #ffe000 url("images/right-chevron.png") no-repeat scroll 94% -7px;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background-size: 16px;
   border-radius: 0;
-  color: #fff;
+  color: #000;
   font-size: 14px;
   padding: 11px 36px 11px 16px;
   text-align: center;
@@ -1851,7 +1872,8 @@ footer a:hover { color: #ffe000  !important; }
   text-transform: uppercase;
 }
 .reqQt.homQt  a {
-  background: #ffe000 url("images/right-chevron.png") no-repeat scroll 94% -7px;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background-size: 16px;
   border-radius: 0;
   color: #000;
   font-size: 14px;
@@ -1862,7 +1884,8 @@ footer a:hover { color: #ffe000  !important; }
 }
 .reqQt.homQt a:hover {
     color: #fff;
-    background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94% -7px;
+    background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94%;
+    background-size: 16px;
 }
 .reqQt.homQt {
   bottom: 25px;
@@ -1873,9 +1896,10 @@ footer a:hover { color: #ffe000  !important; }
   text-align: center;
 }
 .reqQt.MobQt a {
-  background: #0809ea url("images/right-chevron.png") no-repeat scroll 94% -11px;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background-size: 16px;
   border-radius: 0;
-  color: #fff;
+  color: #000;
   font-size: 10px;
   padding: 8px 29px 8px 18px;
   text-align: center;
@@ -1883,8 +1907,10 @@ footer a:hover { color: #ffe000  !important; }
   text-transform: uppercase;
 }
 .reqQt.MobQt a:hover {
-  background-color: #188c14; color: #fff;
-  background-position: 94% -7px;
+    color: #fff;
+  background: #000 url(images/right-chevron-white.png) no-repeat 94%;
+  background-size: 16px;
+
 }
 .reqQt.MobQt {
   display: none;
