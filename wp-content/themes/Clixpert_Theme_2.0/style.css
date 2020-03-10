@@ -4,7 +4,7 @@
 
 
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; font: 400 normal 18px/30px 'Montserrat', Arial, Helvetica, sans-serif; color: #000; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; font:400 normal 18px/30px 'Roboto', sans-serif; color: #000; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 
@@ -363,8 +363,8 @@ ul.sub-menu a { font-size: 14px !important; }
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 280px;
-    margin-top: 180px;
+    height: 320px;
+    margin-top: 170px;
 }
 
 .innersection a { color: #0102fa; font-size: 20px; }
@@ -440,9 +440,18 @@ ul.sub-menu a { font-size: 14px !important; }
 
 }
 
-.prlx a { background: #ffe000 url(images/right-chevron.png) no-repeat 94%; background-size: 16px; text-align: center; text-decoration: none; color: #000; font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0px; text-transform: uppercase; }
+.prlx a {
+    background: #ffe000 url(images/right-chevron.png) no-repeat 84%;
+    background-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 20px 50px 20px 40px;
+    border-radius: 30px;
+    text-transform: uppercase; }
 
-.prlx a:hover {  background:  #000000 url("images/right-chevron-white.png") no-repeat  94%; background-size: 16px; color: #fff; }
+.prlx a:hover {  background:  #000000 url("images/right-chevron-white.png") no-repeat  84%; background-size: 16px; color: #fff; }
 
 .reviewsCls .lSAction > a, .brNds .lSAction > a { background: url(images/arros.png); opacity: 1; width: 15px; }
 
@@ -486,9 +495,13 @@ ul.sub-menu a { font-size: 14px !important; }
  }
  .locationHed {
      position: absolute;
-     left: 33%;
      margin-top: 40px;
      padding-left: 0;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
  }
  .locationHed a { background: url(images/location-icons-01.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
  @media screen and (max-width: 875px) {
@@ -606,7 +619,7 @@ footer a:hover { }
 
 .imagelightbox-loading div { width: 1.3em; height: 1.3em; background-color: #fff; animation: imagelightbox-loading .5s ease infinite; }
 
-.staticbanner { background:url(images/banner01.jpg) no-repeat center top; height: 420px; margin: 180px auto 0; position: relative;max-width: 100%;  }
+.staticbanner { background:url(images/banner01.jpg) no-repeat center top; height: 470px; margin: 169px auto 0; position: relative;max-width: 100%;  }
 
 /*.bancption li:first-child {
 
@@ -795,7 +808,7 @@ a.menu-link { color: #000; display: block; text-decoration: none; height: 22px; 
 
 .menu > ul { padding: 0; }
 
-nav li { display: inline-block; margin: 0; position: relative; padding: 14px 9px 0; }
+nav li { display: inline-block; margin: 0; position: relative; padding: 9px 9px 0; }
 
 .aniPos nav li {
 
@@ -803,7 +816,7 @@ nav li { display: inline-block; margin: 0; position: relative; padding: 14px 9px
 
 }
 
-.menu li a { color: #000000; display: inline-block; font-size: 14px; font-weight: bold ;line-height: 30px; padding: 0; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+.menu li a { font-family: "Roboto", sans-serif; color: #000000; display: inline-block; font-size: 14px; font-weight: bold ;line-height: 30px; padding: 0; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
  @media screen and (max-width: 1024px) {
      .menu li a {
          font-size: 13px;
@@ -868,11 +881,16 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
 .menuPhone {
     float: left;
     width: 100%;
-    height: 70px;
+    height: 60px;
     padding: 8px 0;
     margin: 8px 0;
 }
-
+ @media only screen and (max-width: 934px) {
+     .menuPhone {
+         padding: 5px 0;
+         margin: 8px 0;
+    }
+}
 .level-01 {
 
   float: left;
@@ -1782,7 +1800,7 @@ footer a:hover { color: #ffe000  !important; }
 
 .aniPos .menuD {
   margin-bottom: 0;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .aniPos .phoneHed { margin-top: 27px; }
@@ -1857,38 +1875,38 @@ footer a:hover { color: #ffe000  !important; }
 }
 .reqQt.innpgQt a:hover {
   color: #fff;
-  background: #000 url(images/right-chevron-white.png) no-repeat 94%;
+  background: #000 url(images/right-chevron-white.png) no-repeat 85%;
   background-size: 16px;
 }
 .reqQt.innpgQt  a {
-  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 85%;
   background-size: 16px;
-  border-radius: 0;
   color: #000;
   font-size: 14px;
-  padding: 11px 36px 11px 16px;
+  padding:  20px 50px 20px 40px;
+  border-radius: 30px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 .reqQt.homQt  a {
-  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 85%;
   background-size: 16px;
-  border-radius: 0;
   color: #000;
-  font-size: 14px;
-  padding: 11px 36px 11px 16px;
+  font-size: 16px;
+  padding: 20px 50px 20px 40px;
+  border-radius: 30px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 .reqQt.homQt a:hover {
     color: #fff;
-    background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 94%;
+    background:  #000000 url("images/right-chevron-white.png") no-repeat scroll 85%;
     background-size: 16px;
 }
 .reqQt.homQt {
-  bottom: 25px;
+  bottom: 57px;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -1896,12 +1914,12 @@ footer a:hover { color: #ffe000  !important; }
   text-align: center;
 }
 .reqQt.MobQt a {
-  background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
+  background: #ffe000 url(images/right-chevron.png) no-repeat 85%;
   background-size: 16px;
-  border-radius: 0;
   color: #000;
   font-size: 10px;
-  padding: 8px 29px 8px 18px;
+  padding: 20px 50px 20px 40px;
+  border-radius: 30px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2027,11 +2045,7 @@ body { -webkit-text-size-adjust: none; }
     padding-top: 2px !important;
 margin-top:-25px !important;
 }
-.reqQt.innpgQt a {
-  background-position: 94% 0;
-  background-size: 11px auto;
-  font-size: 10px;
-}
+
 	 .bancption li {font-size: 13px !important;line-height: 16px !important;}
 
 	 .bancption li::before {top: 5px !important;}
@@ -2134,15 +2148,10 @@ ul.sub-menu a { font-size: 12px !important; }
 
 nav li {
 
-  padding: 14px 7px 0;
+  padding: 2px 7px 0;
 
 }
 
-.innerbanner {
-
-  margin-top: 87px;
-
-}
 
 }
 
@@ -2151,13 +2160,17 @@ nav li {
 }
 
  @media screen and (max-width:995px) {
-	 .innerbanner h1.contctCls {
-  padding-top: 111px;
-}
+     .innerbanner {
+         margin-top: 87px;
+     }
+
+     .innerbanner h1.contctCls {
+      padding-top: 111px;
+     }
 	 .innerbanner h1 {padding: 79px 0 0;}
 	.innerbanner h1.threeLine {
-  padding-top: 55px;
-}
+     padding-top: 55px;
+    }
 	 .cpyryt {
   font-size: 14px;
 }
@@ -2169,7 +2182,7 @@ nav li {
 
 .menu li a {
 
-  font-size: 11px;
+  font-size: 10px;
 
 }
 
@@ -2359,7 +2372,7 @@ header .current-menu-item a {
 
 .brnDS .wid { width: 100%; }
 
-.staticbanner { background: #c3c3c3 url(images/banner01.png) no-repeat center center; height: 312px; margin-top: 0px; position: relative; background-size:1058px; }
+.staticbanner { background: #c3c3c3 url(images/banner01.jpg) no-repeat center center; height: 312px; margin-top: 0px; position: relative; background-size:1058px; }
 
 .banhed {font-size: 48px;}
 
@@ -2472,12 +2485,6 @@ header .current-menu-item a {
   font-size: 12px;
   line-height: 30px;
 }
-	 .innerbanner {
-
-  height: 180px;
-
-}
-
 .innerbanner h1 {
     padding: 67px 0;
     margin: 0;
@@ -2500,19 +2507,6 @@ header .current-menu-item a {
     top: 5% !important;
 
 }
-
-	 .innerbanner {
-
-  margin-top: 0;
-
-}
-
-/*	 	 .bancption li::before {
-
-  display: none;
-
-}*/
-
 	 .phoneHed {
 
   float: none;
@@ -2589,7 +2583,7 @@ header .current-menu-item a {
 
 .prlx { height: auto; padding-bottom: 50px; }
 
-.staticbanner { height: 310px; margin-top: 100px; position: relative; background-size: 161%; background-position: center bottom; }
+.staticbanner { height: 310px; margin-top: 100px; position: relative; background-position: center bottom; }
 
 .aniPos .logo img { margin-left: 0; }
 
@@ -2671,6 +2665,13 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          transition: all 0.4s;
          width: 0;
      }
+
+     header .menu li a {
+         font-size: 13px;
+     }
+     header .current-menu-item a {
+         font-size: 13px;
+     }
  }
  @media only screen and (max-width:479px) {
      .logo.logo-mobile { display:block; }
@@ -2685,6 +2686,12 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
      }
      a.menu-link {
          top: 31px;
+     }
+     header .menu li a {
+         font-size: 15px;
+     }
+     header .current-menu-item a {
+         font-size: 15px;
      }
  }
 
@@ -2715,9 +2722,7 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 	 .reqQt.homQt {
   display: none;
 }
-.reqQt.innpgQt {
-  display: none;
-}
+
 .reqQt.MobQt {
     display: block;
     left: 0;
@@ -2821,7 +2826,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 }
 .staticbanner {
   background-position: center bottom;
-  height: 440px;
   margin-top: 85px;
 }
 
