@@ -393,11 +393,15 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .bannermain { height: 560px; background-repeat: no-repeat; background-size: cover; background-position: center top; }
 
-.bancption { position: absolute; left: 0; right: 0; text-align: center; top: 15px; }
-
+.bancption { position: absolute; left: 0; right: 0; text-align: center; top:76px;display:none;}
+ @media screen and (max-width: 475px) {
+     .bancption {
+         display:none;
+     }
+ }
 .bannerSlider li { position: relative; }
 
-.banhed { font-size: 52px; font-weight: bold; color: #6d6e71;margin-bottom: 0; }
+.banhed { font-size: 60px; font-weight: bold; color: #000000;margin-bottom: 0; }
 
 .bancptionul { }
 
@@ -619,7 +623,14 @@ footer a:hover { }
 
 .imagelightbox-loading div { width: 1.3em; height: 1.3em; background-color: #fff; animation: imagelightbox-loading .5s ease infinite; }
 
-.staticbanner { background:url(images/banner01.jpg) no-repeat center top; height: 470px; margin: 169px auto 0; position: relative;max-width: 100%;  }
+.staticbanner {
+    background:url(images/banner01.jpg) no-repeat center;
+    height: 645px;
+    margin: 169px auto 0;
+    position: relative;
+    max-width: 100%;
+    background-size: 100%;
+}
 
 /*.bancption li:first-child {
 
@@ -1906,7 +1917,7 @@ footer a:hover { color: #ffe000  !important; }
     background-size: 16px;
 }
 .reqQt.homQt {
-  bottom: 57px;
+  bottom: 157px;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -2583,7 +2594,12 @@ header .current-menu-item a {
 
 .prlx { height: auto; padding-bottom: 50px; }
 
-.staticbanner { height: 310px; margin-top: 100px; position: relative; background-position: center bottom; }
+.staticbanner {
+    height: 450px;
+    margin-top: 100px;
+    position: relative;
+    background-position: center;
+}
 
 .aniPos .logo img { margin-left: 0; }
 
@@ -2696,263 +2712,352 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
  }
 
  @media only screen and (max-width:479px) {
-	 .innerbanner h1.threeLine {
-    padding: 21px 0 !important;
-    font-size: 22px;
-    margin: 0 0;
-}
-	 .reqQt.MobQt a {
-    background-size: 12px;
-    background-position: 94% -6px;
-}
-	 .cpyryt {
-  font-size: 11px;
-  text-align: center;
-}
-	 .cpyryt > a {
-  background: rgba(0, 0, 0, 0) url("images/clixpert-logo.png") no-repeat scroll right 5px;
-  font-size: 11px;
-  line-height: 32px;
-    display: block;
-}
+     .innerbanner h1.threeLine {
+         padding: 21px 0 !important;
+         font-size: 22px;
+         margin: 0 0;
+     }
 
-	 .aniPos {
-  padding-bottom: 2px;
-}
-	 .reqQt.homQt {
-  display: none;
-}
+     .reqQt.MobQt a {
+         background-size: 12px;
+         background-position: 94% -6px;
+     }
 
-.reqQt.MobQt {
-    display: block;
-    left: 0;
-    clear: both;
-}
+     .cpyryt {
+         font-size: 11px;
+         text-align: center;
+     }
 
-.logotxt {
-  display: inline-block;
-  float: left;
-  font-size: 12px;
-  margin-left: 0;
-  clear: inherit;
-}
-	 .aniPos .logotxt {
-  display: inline;
-}
-.logo img {
-  float: left;
-  width: 60px;
-  margin-top: -7px;
-}
-.aniPos .phoneHed a {
+     .cpyryt > a {
+         background: rgba(0, 0, 0, 0) url("images/clixpert-logo.png") no-repeat scroll right 5px;
+         font-size: 11px;
+         line-height: 32px;
+         display: block;
+     }
 
-  float: left;
-}
-.logo span {
-  font-size: 12px;
-}
+     .aniPos {
+         padding-bottom: 2px;
+     }
 
-.innerbanner h1 {
+     .reqQt.homQt {
+         bottom: 48px;
+     }
 
-  padding: 23px 0 0;
+     .reqQt.MobQt {
+         display: block;
+         left: 0;
+         clear: both;
+     }
 
-}
-.aniPos .logo span {
-  font-size: 12px;
-}
+     .logotxt {
+         display: inline-block;
+         float: left;
+         font-size: 12px;
+         margin-left: 0;
+         clear: inherit;
+     }
 
-.aniPos .logotxt {
-  font-size: 12px;
-}
-.aniPos .phoneHed a {
-  background-position: 3px 9px;
-  background-size: 14px auto;
-  float: right;
-  font-size: 16px;
-}
-.aniPos .reqQt.MobQt a {
-    margin-top: 5px;
-}
+     .aniPos .logotxt {
+         display: inline;
+     }
 
-.aniPos .menu {
-  top: 82px !important;
-}
+     .logo img {
+         float: left;
+         width: 60px;
+         margin-top: -7px;
+     }
+
+     .aniPos .phoneHed a {
+
+         float: left;
+     }
+
+     .logo span {
+         font-size: 12px;
+     }
+
+     .innerbanner h1 {
+
+         padding: 23px 0 0;
+
+     }
+
+     .aniPos .logo span {
+         font-size: 12px;
+     }
+
+     .aniPos .logotxt {
+         font-size: 12px;
+     }
+
+     .aniPos .phoneHed a {
+         background-position: 3px 9px;
+         background-size: 14px auto;
+         float: right;
+         font-size: 16px;
+     }
+
+     .aniPos .reqQt.MobQt a {
+         margin-top: 5px;
+     }
+
+     .aniPos .menu {
+         top: 82px !important;
+     }
 
 
-.menu {
-  top: 82px;
-}
+     .menu {
+         top: 82px;
+     }
 
-.innerbanner {
-  margin-top: 83px;
-}
+     .innerbanner {
+         margin-top: 83px;
+     }
 
-.phoneHed {
-  float: right;
-  margin-left: 0;
-  padding-left: 0;
-  text-align: center;
-  width: auto;
-}
-.phoneHed a {
-  background-position: 11px 9px;
-  background-size: 12px auto;
-  float: right;
-  font-size: 16px;
-}
-.aniPos a.menu-link {
-  top: 55px;
-}
-.aniPos a.menu-link.active {
-    top: 52px;
-}
+     .phoneHed {
+         float: right;
+         margin-left: 0;
+         padding-left: 0;
+         text-align: center;
+         width: auto;
+     }
 
-	 .rgtsdcnt .wpcf7 {
+     .phoneHed a {
+         background-position: 11px 9px;
+         background-size: 12px auto;
+         float: right;
+         font-size: 16px;
+     }
 
-  width: 100%;
+     .aniPos a.menu-link {
+         top: 55px;
+     }
 
-}
+     .aniPos a.menu-link.active {
+         top: 52px;
+     }
 
-	 .contctCls {
+     .rgtsdcnt .wpcf7 {
 
-  padding: 110px 0!important;
+         width: 100%;
 
-}
+     }
 
-.aniPos .phoneHed a {
+     .contctCls {
 
-  margin-right:0px;
+         padding: 110px 0 !important;
 
-}
-.staticbanner {
-  background-position: center bottom;
-  margin-top: 85px;
-}
+     }
 
-	 .prdtlsit li {
+     .aniPos .phoneHed a {
 
-  width: 100%;
+         margin-right: 0px;
 
-  margin: 20px 0px;
+     }
 
-}
+     .staticbanner {
+         background-position: center top;
+         margin-top: 85px;
+     }
 
-section.prdtlsit {
+     .prdtlsit li {
 
-  padding: 20px 0 25px;
+         width: 100%;
 
-}
+         margin: 20px 0px;
 
-	 .bancption li {font-size: 17px;}
+     }
 
-	 .pageimgs.sprP li {
+     section.prdtlsit {
 
-  width: 45.6%;
+         padding: 20px 0 25px;
 
-}
+     }
+
+     .bancption li {
+         font-size: 17px;
+     }
+
+     .pageimgs.sprP li {
+
+         width: 45.6%;
+
+     }
 
      .prdtlsit li:nth-child(4) .prdttxt {
 
-    top: inherit;
+         top: inherit;
 
-    bottom: 0;
-
-}
-
-	 .menu li a {white-space: normal;}
-
-.photogal { padding: 30px 0; }
-
-.imagelightbox-close { top: 6.25em !important; }
-
-.photogal li { width: 48%; }
-
-.fetrhed span { font-size: 23px; }
-
-.fetrhed { font-size: 23px; }
-
-
-
-
-
-#imagelightbox { top: 27% !important; }
-
-.pageimgs li { width: 100%; }
-
-.foot { width: 100%; }
-
-.prdtlsit li img { width: 100%; vertical-align: middle; height: auto; margin-top: 0; text-align: right; }
-
-
-
-.banhed { font-size: 30px; }
-
-.bancption p { margin-top: 0px; line-height: 23px; font-size: 18px; .innerpage {
-
-margin-top: 55px;
-
-}
-
-.blgcont > img { display: block; float: none; margin: 0 auto 18px; }
-
-.blog-post { text-align: center; }
-
-nav.menu { max-height: 420px !important; overflow-y: auto; }
-
-.aniPos .logo { margin-top: 11px; width: 156px; }
-
-.banner { background-position: center center; background-size: 700px auto; height: 262px; }
-
-h1 { font-size: 28px; line-height: 36px; }
-
-h2, h2, h3, h4, h5, h6 { font-size: 21px; line-height: 34px; }
-
-.listng.twoCol > li { float: left; width: 100%; }
-
-.slideCvr { padding: 35px 0 0; }
-
-.bancption li:before { display:none !important; }
-.cpyryt > a {
-  background: rgba(0, 0, 0, 0) url("images/clixpert-logo.png") no-repeat scroll right -3px;
-}
-
-}
- @media only screen and (max-width:360px) {
-        .innerbanner h1 {
-            padding: 44px 0 !important;
-                font-size: 26px;
-            margin: 0 0;
-        }
-        .innerbanner h1.contctCls {
-          padding: 67px 0 !important;
-            margin: 0 0;
-        }
-        .innerbanner h1.threeLine {
-            padding: 21px 0 !important;
-                font-size: 26px;
-            margin: 0 0;
-        }
-
-        .aniPos .phoneHed a {
-          background-position: 11px 9px;
-          background-size: 12px auto;
-          font-size: 16px;
-        }
- }
-
- @media only screen and (max-width:320px) {
-     .phoneHed a {
+         bottom: 0;
 
      }
-}
-.aniPos .phoneHed a {
-  font-size: 12px;
-}
-.cpyryt > a {
-  font-size: 10px;
-}
-.cpyryt {
-  font-size: 10px;
-}}
+
+     .menu li a {
+         white-space: normal;
+     }
+
+     .photogal {
+         padding: 30px 0;
+     }
+
+     .imagelightbox-close {
+         top: 6.25em !important;
+     }
+
+     .photogal li {
+         width: 48%;
+     }
+
+     .fetrhed span {
+         font-size: 23px;
+     }
+
+     .fetrhed {
+         font-size: 23px;
+     }
 
 
+     #imagelightbox {
+         top: 27% !important;
+     }
+
+     .pageimgs li {
+         width: 100%;
+     }
+
+     .foot {
+         width: 100%;
+     }
+
+     .prdtlsit li img {
+         width: 100%;
+         vertical-align: middle;
+         height: auto;
+         margin-top: 0;
+         text-align: right;
+     }
+
+
+     .banhed {
+         font-size: 30px;
+     }
+
+     .bancption p {
+         margin-top: 0px;
+         line-height: 23px;
+         font-size: 18px;
+     }
+     .innerpage {
+
+         margin-top: 55px;
+
+     }
+
+     .blgcont > img {
+         display: block;
+         float: none;
+         margin: 0 auto 18px;
+     }
+
+     .blog-post {
+         text-align: center;
+     }
+
+     nav.menu {
+         max-height: 420px !important;
+         overflow-y: auto;
+     }
+
+     .aniPos .logo {
+         margin-top: 11px;
+         width: 156px;
+     }
+
+     .banner {
+         background-position: center center;
+         background-size: 700px auto;
+         height: 262px;
+     }
+
+     h1 {
+         font-size: 28px;
+         line-height: 36px;
+     }
+
+     h2, h2, h3, h4, h5, h6 {
+         font-size: 21px;
+         line-height: 34px;
+     }
+
+     .listng.twoCol > li {
+         float: left;
+         width: 100%;
+     }
+
+     .slideCvr {
+         padding: 35px 0 0;
+     }
+
+     .bancption li:before {
+         display: none !important;
+     }
+
+     .cpyryt > a {
+         background: rgba(0, 0, 0, 0) url("images/clixpert-logo.png") no-repeat scroll right -3px;
+     }
+
+ }
+
+ @media only screen and (max-width: 360px) {
+     .innerbanner h1 {
+         padding: 44px 0 !important;
+         font-size: 26px;
+         margin: 0 0;
+     }
+
+     .innerbanner h1.contctCls {
+         padding: 67px 0 !important;
+         margin: 0 0;
+     }
+
+     .innerbanner h1.threeLine {
+         padding: 21px 0 !important;
+         font-size: 26px;
+         margin: 0 0;
+     }
+
+     .aniPos .phoneHed a {
+         background-position: 11px 9px;
+         background-size: 12px auto;
+         font-size: 16px;
+     }
+ }
+
+ .aniPos .phoneHed a {
+     font-size: 12px;
+ }
+
+ .cpyryt > a {
+     font-size: 10px;
+ }
+
+ .cpyryt {
+     font-size: 10px;
+ }
+
+section.banner-desc-section {
+    padding: 30px 0;
+    background-color: #000;
+    color: #ffffff;
+}
+ section.banner-desc-section ul {
+     text-align: center;
+     margin: 30px 0 30px;
+ }
+ section.banner-desc-section ul li{
+     display: block;
+     width: auto;
+ }
+ section.banner-desc-section ul li span {
+     color: #ffffff;
+ }
