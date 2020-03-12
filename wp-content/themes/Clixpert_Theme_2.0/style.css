@@ -3077,6 +3077,9 @@ section.banner-desc-section {
      text-align: center;
      font-size: 14px;
  }
+ footer.justin-group p.copyright a{
+     font-size: 14px;
+ }
 
  @media (min-width: 768px) {
      footer.justin-group .col-sm-12 {
