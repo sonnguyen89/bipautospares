@@ -491,7 +491,11 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .prlx { background:url(images/ftrbanr.jpg) no-repeat center; height: 520px; text-align: center; background-size:cover; }
 
-.phoneHed { float: right; margin-top: 40px; padding-left:0; }
+.phoneHed {
+    float: right;
+    right: 15px;
+    position: relative;
+}
  @media screen and (max-width: 875px) {
      .phoneHed {
          display:none;
@@ -507,13 +511,17 @@ ul.sub-menu a { font-size: 14px !important; }
      margin-right: auto;
      text-align: center;
  }
- .locationHed a { background: url(images/location-icons-01.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
+ .locationHed a.location-a { background: url(images/location-icons-01.png) no-repeat 0 -2px;
+     padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px;
+     position: relative;
+     left: 50px;
+ }
  @media screen and (max-width: 875px) {
      .locationHed {
          display:none
      }
  }
-.phoneHed a { background: url(images/phone-icons-02.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
+.phoneHed a.phone-a { background: url(images/phone-icons-02.png) no-repeat 0 -2px; padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px; }
 
 .phoneHed a:hover { color: #fff; }
 
@@ -1814,7 +1822,6 @@ footer a:hover { color: #ffe000  !important; }
   margin-top: 10px;
 }
 
-.aniPos .phoneHed { margin-top: 27px; }
 
 .aniPos .logoRgt { margin-top: 17px; }
 
@@ -2701,7 +2708,7 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          display: none;
      }
      a.menu-link {
-         top: 31px;
+         top: 38px;
      }
      header .menu li a {
          font-size: 15px;
@@ -2827,10 +2834,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          background-size: 12px auto;
          float: right;
          font-size: 16px;
-     }
-
-     .aniPos a.menu-link {
-         top: 55px;
      }
 
      .aniPos a.menu-link.active {
@@ -3031,10 +3034,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          background-size: 12px auto;
          font-size: 16px;
      }
- }
-
- .aniPos .phoneHed a {
-     font-size: 12px;
  }
 
  .cpyryt > a {
