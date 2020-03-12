@@ -1813,7 +1813,8 @@ footer a:hover { color: #ffe000  !important; }
 .aniPos { position: fixed;
     z-index: 999999;
     padding-bottom: 0;
-    border-bottom: 2px solid #000; }
+    border-bottom: 2px solid #ffe000
+}
 
 .aniPos .logo { }
 
@@ -2140,12 +2141,6 @@ ul.sub-menu a { font-size: 12px !important; }
 
 }
 
-.aniPos .menu li a {
-
-  font-size: 12px;
-
-}
-
 .aniPos nav li {
 
   padding: 0 7px;
@@ -2207,12 +2202,6 @@ nav li {
 	 .bancption li {font-size: 21px;}
 
 	 .bancption li::before {top: 7px;}
-
-.aniPos .menu li a {
-
-  font-size: 11px;
-
-}
 
 
 
@@ -2742,10 +2731,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          display: block;
      }
 
-     .aniPos {
-         padding-bottom: 2px;
-     }
-
      .reqQt.homQt {
          bottom: 48px;
      }
@@ -2834,10 +2819,6 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
          background-size: 12px auto;
          float: right;
          font-size: 16px;
-     }
-
-     .aniPos a.menu-link.active {
-         top: 52px;
      }
 
      .rgtsdcnt .wpcf7 {
