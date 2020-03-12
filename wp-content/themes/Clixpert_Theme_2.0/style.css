@@ -3061,3 +3061,26 @@ section.banner-desc-section {
  section.banner-desc-section ul li span {
      color: #ffffff;
  }
+
+ footer.justin-group {
+     padding: 5px 0 5px;
+     background-color: #000000;
+ }
+
+ footer.justin-group .col-sm-12 {
+     position: relative;
+     min-height: 1px;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ footer.justin-group p.copyright {
+     text-align: center;
+     font-size: 14px;
+ }
+
+ @media (min-width: 768px) {
+     footer.justin-group .col-sm-12 {
+         width: 100%;
+         float: left;
+     }
+ }

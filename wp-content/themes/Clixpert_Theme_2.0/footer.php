@@ -41,15 +41,40 @@
 <li><a href="<?php echo get_option('twt_url'); ?>" target="_blank" title="Twitter"></a></li>
 <li><a href="<?php echo get_option('insta_url'); ?>" target="_blank" title="Instagram"></a></li>
 </ul>
-
-<div class="cpyryt">
-COPYRIGHT <?php echo date('Y'); ?> ALL RIGHTS RESERVED. <a href="https://www.clixpert.com.au" title="WEBSITE BY AN AWARD WINNING AGENCY - CLIXPERT " target="_blank" rel="nofollow">WEBSITE BY AN AWARD WINNING AGENCY - CLIXPERT</a>
 </div>
 
 </div>
+</footer>
+<footer class="justin-group footer">
 
+    <!-- Divider -->
+    <div class="wid">
 
-</div>
+        <div class="row">
+
+            <div class="col-sm-12">
+                <p class="copyright font-alt">© 2020 BIP Auto Spare & Repairs. Website By <a href="https://justingroup.com.au/">Just.In Group</a></p>
+            </div>
+          <!--  <div class="col-sm-6">
+                <div class="footer-social-links">
+                    <a href="#" target="_blank">
+                        <span class="social_facebook"></span>
+                    </a>
+                    <a href="#" target="_blank">
+                            <span class="social_twitter">
+                            </span>
+                    </a>
+                    <a href="#" target="_blank">
+                            <span class="social_dribbble">
+                            </span></a>
+                    <a href="#" target="_blank">
+                            <span class="social_skype">
+                            </span>
+                    </a>
+                </div>
+            </div>-->
+        </div><!-- .row -->
+    </div>
 </footer>
 <?php wp_footer() ?>
 
