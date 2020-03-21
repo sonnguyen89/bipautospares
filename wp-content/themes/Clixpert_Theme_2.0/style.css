@@ -599,7 +599,7 @@ footer li { }
 
 .socilmedia li:nth-child(2) a { background: url(images/socialmedia.png) no-repeat -95px 0; padding: 25px 31px; }
 
-.socilmedia li:last-child a { background: url(images/socialmedia.png) no-repeat -168px 0; padding: 25px 35px; }
+.socilmedia li:last-child a { background: url(images/socialmedia.png) no-repeat -167px 0; padding: 25px 35px; }
 
 footer p { font-size: 16px; color: #fff; margin-bottom: 0px; }
 
@@ -813,7 +813,12 @@ footer .current_page_item a:hover, footer .current-menu-item a:hover { backgroun
 
 .current_page_item li a { color: #ffffff !important; background: none; }
 
-.menuD { margin-top: 0;}
+.menuD {
+    margin: 0 auto;
+    text-align: center;
+    height: 48px;
+    padding: 0 22px;
+}
 
 a.menu-link { color: #000; display: block; text-decoration: none; height: 22px; width: 35px; }
 
@@ -827,7 +832,12 @@ a.menu-link { color: #000; display: block; text-decoration: none; height: 22px; 
 
 .menu > ul { padding: 0; }
 
-nav li { display: inline-block; margin: 0; position: relative; padding: 9px 9px 0; }
+nav li {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding: 9px 9px 0;
+}
 
 .aniPos nav li {
 
@@ -898,11 +908,10 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
      width: 173px;
  }
 .menuPhone {
-    float: left;
-    width: 100%;
-    height: 60px;
-    padding: 8px 0;
-    margin: 8px 0;
+     width: 100%;
+     height: 60px;
+     padding: 8px 0;
+     margin: 8px 0;
 }
  @media only screen and (max-width: 934px) {
      .menuPhone {
@@ -1986,7 +1995,11 @@ footer a:hover { color: #ffe000  !important; }
 
 .js .menu > ul li:hover > ul { display: flex; }
 
-.menu ul {/* display: flex; */ flex-flow: row; justify-content: space-between; margin: 0; padding: 0; margin-top: 0; }
+.menu ul {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
 
 nav > ul > li:last-child { padding-right: 0; }
 
