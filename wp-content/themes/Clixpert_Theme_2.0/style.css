@@ -562,7 +562,7 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .bipptshed { text-align: center; color: #fff; font-size: 36px; margin-bottom: 30px; padding-top: 170px; }
 
-.prlx p { text-align: center; color: #fff; font-size: 20px; }
+.prlx p { text-align: center; color: #fff; font-size: 20px; margin-bottom: 50px;}
  @media only screen and (max-width:479px) {
      .prlx p {
          margin-bottom: 50px;
@@ -851,13 +851,6 @@ nav li {
     position: relative;
     padding: 9px 9px 0;
 }
-
-.aniPos nav li {
-
-  padding: 0px 9px;
-
-}
-
 .menu li a { font-family: "Roboto", sans-serif; color: #000000; display: inline-block; font-size: 14px; font-weight: bold ;line-height: 30px; padding: 0; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
  @media screen and (max-width: 1024px) {
      .menu li a {
