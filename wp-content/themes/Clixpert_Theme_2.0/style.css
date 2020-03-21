@@ -77,14 +77,22 @@ input[type="submit"], input[type="button"], button { -webkit-appearance: none; }
 input[type="submit"], input[type="button"], button {
     background: #ffe000 url(images/right-chevron.png) no-repeat 94%;
     background-size: 16px;
-    border: none; -webkit-transition: all 0.4s;
+    border: none;
+    -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
+    margin-top: 15px;
+    color: #000;
+    font-size: 14px;
+    padding: 20px 50px 20px 40px;
+    border-radius: 30px;
     text-align: center;
-    margin-top: 20px; text-decoration: none; color: #000;
-    font-size: 14px; padding: 11px 36px 11px 16px; border-radius: 0; text-transform: uppercase; }
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     background: #000 url(images/right-chevron-white.png) no-repeat 94%;
@@ -357,7 +365,8 @@ ul.sub-menu a { font-size: 14px !important; }
 
 .aniPos ul.sub-menu a { font-size: 12px !important; }
 
-.innerbanner h1 { text-align: center; padding: 113px 0 0; color: #000; }
+.innerbanner h1 { text-align: center; padding: 113px 0 0; color: #000;
+    margin-bottom: 54px;}
 
 .innerbanner {
     background-position: center center;
@@ -513,8 +522,8 @@ ul.sub-menu a { font-size: 14px !important; }
  }
  .locationHed a.location-a { background: url(images/location-icons-01.png) no-repeat 0 -2px;
      padding-left: 28px; font-size: 14px; color: #fff; background-size: 23px;
-     position: relative;
-     left: 50px;
+     right: 137px;
+     position: absolute;
  }
  @media screen and (max-width: 875px) {
      .locationHed {
@@ -554,7 +563,11 @@ ul.sub-menu a { font-size: 14px !important; }
 .bipptshed { text-align: center; color: #fff; font-size: 36px; margin-bottom: 30px; padding-top: 170px; }
 
 .prlx p { text-align: center; color: #fff; font-size: 20px; }
-
+ @media only screen and (max-width:479px) {
+     .prlx p {
+         margin-bottom: 50px;
+     }
+ }
 .photogal { background: #212121; padding: 80px 0; }
 
 .photogal ul { margin-top: 20px; }
@@ -913,7 +926,7 @@ span.has-subnav { display: block; color: #fff; font-size: 1em; line-height: 34px
      padding: 8px 0;
      margin: 8px 0;
 }
- @media only screen and (max-width: 934px) {
+ @media only screen and (max-width: 955px) {
      .menuPhone {
          padding: 5px 0;
          margin: 8px 0;
@@ -1825,14 +1838,6 @@ footer a:hover { color: #ffe000  !important; }
     border-bottom: 2px solid #ffe000
 }
 
-.aniPos .logo { }
-
-.aniPos .menuD {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-
 .aniPos .logoRgt { margin-top: 17px; }
 
 .aniPos .menu li a { font-size: 14px; }
@@ -2107,7 +2112,7 @@ header { position: inherit !important; padding-bottom: 10px !important; border-b
 
 .prdtlsit ul { text-align: center; }
 
-.wid { padding: 0 15px; width: 100%; }
+.wid { padding: 0 15px; width: 100%;}
 
 .logotxt { font-size: 25px; }
 
@@ -2180,20 +2185,18 @@ nav li {
 
 
 }
-
- @media screen and (max-width:874px) {
-     .menuD { margin-top:15px;  }
-}
-
  @media screen and (max-width:995px) {
      .innerbanner {
          margin-top: 87px;
      }
 
-     .innerbanner h1.contctCls {
+     .innerbanner h1.contctCls
+     {
       padding-top: 111px;
      }
-	 .innerbanner h1 {padding: 79px 0 0;}
+	 .innerbanner h1 {
+         padding: 0;
+     }
 	.innerbanner h1.threeLine {
      padding-top: 55px;
     }
@@ -2204,12 +2207,6 @@ nav li {
   background: rgba(0, 0, 0, 0) url("images/clixpert-logo.png") no-repeat scroll right 0px;
   font-size: 14px;
   line-height: 32px;
-}
-
-.menu li a {
-
-  font-size: 10px;
-
 }
 
 	 .bancption li {font-size: 21px;}
@@ -2494,8 +2491,9 @@ header .current-menu-item a {
     display: block;
 }
 .gmapsec{display:none;}
-	 .reqQt.innpgQt {
-  padding-top: 30px;
+
+ .reqQt.innpgQt {
+        padding-top: 30px;
 }
 	 .cpyryt {
   font-size: 12px;
@@ -2718,6 +2716,11 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
      header .current-menu-item a {
          font-size: 15px;
      }
+     .reqQt.innpgQt {
+         padding-top: 0;
+         position: relative;
+         bottom: 0;
+     }
  }
 
  @media only screen and (max-width:479px) {
@@ -2745,7 +2748,7 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
      }
 
      .reqQt.homQt {
-         bottom: 48px;
+         bottom: 75px;
      }
 
      .reqQt.MobQt {
@@ -2782,9 +2785,8 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
      }
 
      .innerbanner h1 {
-
-         padding: 23px 0 0;
-
+         position: relative;
+         top: 0;
      }
 
      .aniPos .logo span {
@@ -2816,7 +2818,10 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
      }
 
      .innerbanner {
-         margin-top: 83px;
+         margin-top: 99px;
+     }
+     .innerbanner .wid {
+         height:100%;
      }
 
      .phoneHed {
@@ -2848,13 +2853,14 @@ h2, h3, h4, h5, h6 { font-size: 25px; }
 
      .aniPos .phoneHed a {
 
-         margin-right: 0px;
+         margin-right: 0;
 
      }
 
      .staticbanner {
          background-position: center top;
-         margin-top: 85px;
+         margin-top: 99px;
+         height: 500px;
      }
 
      .prdtlsit li {
